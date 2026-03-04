@@ -1,0 +1,254 @@
+[
+    {
+        "id": 1,
+        "name": "Solitaire Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "A single center diamond. Timeless and elegant.",
+        "image": "https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 2,
+        "name": "Halo Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Center stone surrounded by smaller diamonds for extra sparkle.",
+        "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 3,
+        "name": "Hidden Halo Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "A secret halo beneath the main stone adding discreet brilliance.",
+        "image": "https://images.unsplash.com/photo-1599643478514-4a820cbf311e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 4,
+        "name": "Three-Stone Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Symbolizes past, present & future.",
+        "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 5,
+        "name": "Vintage Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Detailed craftsmanship inspired by old-era designs.",
+        "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 6,
+        "name": "Pave Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Band covered with small diamonds for continuous shine.",
+        "image": "https://images.unsplash.com/photo-1596940562635-423521250325?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 7,
+        "name": "Channel Set Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Diamonds set securely inside a channel in the band.",
+        "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 8,
+        "name": "Bezel Set Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Metal surrounds the diamond completely for maximum security.",
+        "image": "https://images.unsplash.com/photo-1579913709033-066cb8da79ad?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 9,
+        "name": "Tension Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Diamond appears suspended entirely between metal ends.",
+        "image": "https://images.unsplash.com/photo-1633512396656-91e8dd4fe419?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 10,
+        "name": "Cathedral Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Arched setting lifting the diamond high for a majestic look.",
+        "image": "https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 11,
+        "name": "Split Shank Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Band splits dynamically as it approaches the center stone.",
+        "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 12,
+        "name": "Twisted Band Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Romantic intertwined band design signifying intertwined lives.",
+        "image": "https://images.unsplash.com/photo-1599643478514-4a820cbf311e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 13,
+        "name": "Eternity Band",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Diamonds cascading all around the band — the symbol of forever.",
+        "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 14,
+        "name": "Half Eternity Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Brilliant diamonds delicately set on the top half of the band.",
+        "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 15,
+        "name": "Minimalist Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Clean, simple, and beautifully modern style.",
+        "image": "https://images.unsplash.com/photo-1596940562635-423521250325?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 16,
+        "name": "Custom Designer Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "18K Gold / Platinum",
+        "description": "Fully personalised and crafted based exclusively on your imagination.",
+        "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 17,
+        "name": "Engagement Ring",
+        "category": "Other Rings",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "The perfect ring to start your forever journey.",
+        "image": "https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 18,
+        "name": "Casual & Stackable Rings",
+        "category": "Other Rings",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Everyday elegance, perfect for stacking and casual wear.",
+        "image": "https://images.unsplash.com/photo-1599643478514-4a820cbf311e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 19,
+        "name": "Cocktail Ring",
+        "category": "Other Rings",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Bold, statement rings designed to turn heads.",
+        "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 20,
+        "name": "Wedding Necklace",
+        "category": "Neck Jewellery",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Elaborate, breathtaking neck pieces for your special day.",
+        "image": "https://images.unsplash.com/photo-1599643478514-4a820cbf311e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 21,
+        "name": "Mangalsutra & Pendants",
+        "category": "Neck Jewellery",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Traditional symbols of love, modernized with brilliant diamonds.",
+        "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 22,
+        "name": "Chokers & Statement Necklaces",
+        "category": "Neck Jewellery",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Bold, dramatic designs that hug the collarbone.",
+        "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 23,
+        "name": "Tennis Bracelet",
+        "category": "Bracelets & Hand Jewellery",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "A continuous line of perfectly cut diamonds wrapping the wrist.",
+        "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 24,
+        "name": "Bangles & Kadas",
+        "category": "Bracelets & Hand Jewellery",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Traditional and contemporary rigid luxury jewelry for the wrist.",
+        "image": "https://images.unsplash.com/photo-1596940562635-423521250325?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 25,
+        "name": "Charm & Cuff Bracelets",
+        "category": "Bracelets & Hand Jewellery",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Expressive styling, lightweight and highly customizable.",
+        "image": "https://images.unsplash.com/photo-1579913709033-066cb8da79ad?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 26,
+        "name": "Bridal Anklets & Payals",
+        "category": "Foot Jewellery",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Intricate craftsmanship gracing your every step.",
+        "image": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        "id": 27,
+        "name": "Drop & Jhumka Earrings",
+        "category": "Earrings",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Elegantly suspended, blending modern diamonds with classic styles like Jhumkas & Chandbalis.",
+        "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": 28,
+        "name": "Studs & Hoops",
+        "category": "Earrings",
+        "price": "Custom Pricing",
+        "material": "Gold / Platinum",
+        "description": "Versatile and brilliant daily wear masterpieces.",
+        "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800"
+    }
+]
