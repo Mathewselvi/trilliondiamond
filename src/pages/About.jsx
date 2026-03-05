@@ -12,12 +12,20 @@ export default function About() {
             </Helmet>
 
             {/* Hero Header */}
-            <section className="bg-accent pt-40 pb-20">
-                <div className="max-w-4xl mx-auto px-4 text-center">
+            <section className="bg-secondary text-white pt-40 pb-20 relative overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute inset-0 bg-black/60 z-10" />
+                    <img
+                        src="/images/rings/Trillion/Half_eternity_ring.WEBP"
+                        alt="About Us Background"
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+                <div className="max-w-4xl mx-auto px-4 text-center relative z-20">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-heading text-secondary mb-6 leading-tight"
+                        className="text-4xl md:text-5xl lg:text-6xl font-heading text-white mb-6 leading-tight"
                     >
                         Welcome to Your <br /> Personal Ring Studio
                     </motion.h1>
@@ -25,7 +33,7 @@ export default function About() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="text-gray-600 font-light text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto"
+                        className="text-gray-200 font-light text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto"
                     >
                         We are not a tray-based jewellery store. We are a custom wedding & engagement ring studio.
                     </motion.p>
@@ -43,7 +51,7 @@ export default function About() {
                             className="order-2 lg:order-1 relative h-96 md:h-[600px]"
                         >
                             <img
-                                src="https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=1000"
+                                src="/images/rings/Trillion/Solitaire_ring_.WEBP"
                                 alt="Custom Wedding Ring Studio"
                                 className="w-full h-full object-cover rounded-sm shadow-xl"
                             />

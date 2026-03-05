@@ -13,9 +13,9 @@ export default function Customization() {
             {/* Hero Header */}
             <section className="bg-secondary text-white pt-40 pb-20 relative overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0 bg-secondary/90 mix-blend-multiply z-10" />
+                    <div className="absolute inset-0 bg-black/50 z-10" />
                     <img
-                        src="https://images.unsplash.com/photo-1599643478514-4a820cbf311e?auto=format&fit=crop&q=80&w=2000"
+                        src="/images/rings/Trillion/Floral_ring.PNG"
                         alt="Custom Design Background"
                         className="w-full h-full object-cover"
                     />

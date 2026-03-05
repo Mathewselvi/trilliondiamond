@@ -1,30 +1,43 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Star, ShieldCheck, Diamond, Gem } from 'lucide-react';
+import products from '../data/products.json';
+
+const heroImages = products.map(p => p.image).filter(Boolean);
 
 const featuredProducts = [
     {
         id: 1,
         name: "Solitaire Collection",
         category: "Wedding Rings",
-        image: "https://images.unsplash.com/photo-1605100804763-247f67b2548e?auto=format&fit=crop&q=80&w=800",
+        image: "/images/rings/Trillion/Solitaire_ring_.WEBP",
     },
     {
         id: 2,
         name: "Vintage Craftsmanship",
         category: "Wedding Rings",
-        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800",
+        image: "/images/rings/Trillion/Vintage_ring_.JPG",
     },
     {
         id: 3,
         name: "Eternity Bands",
         category: "Wedding Rings",
-        image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=800",
+        image: "/images/rings/Trillion/Eternity_ring_.WEBP",
     }
 ];
 
 export default function Home() {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+        }, 5000); // Change image every 5 seconds
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <>
             <Helmet>
@@ -33,14 +46,33 @@ export default function Home() {
             </Helmet>
 
             {/* Hero Section */}
-            <section className="relative h-screen flex items-center justify-center overflow-hidden">
+            <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
                 <div className="absolute inset-0 z-0">
+                    {heroImages.map((img, index) => (
+                        <motion.div
+                            key={img}
+                            initial={false}
+                            animate={{
+                                opacity: index === currentImageIndex ? 1 : 0,
+                                scale: index === currentImageIndex ? 1 : 1.15,
+                                zIndex: index === currentImageIndex ? 10 : 0,
+                                display: Math.abs(index - currentImageIndex) <= 1 || index === 0 || index === heroImages.length - 1 ? 'block' : 'none'
+                            }}
+                            transition={{
+                                opacity: { duration: 0 },
+                                scale: index === currentImageIndex ? { duration: 6, ease: "linear" } : { duration: 0 }
+                            }}
+                            className="absolute inset-0 w-full h-full"
+                        >
+                            <img
+                                src={img}
+                                alt={`Luxury Custom Jewellery ${index + 1}`}
+                                className="w-full h-full object-cover object-center"
+                                loading={index === 0 ? "eager" : "lazy"}
+                            />
+                        </motion.div>
+                    ))}
                     <div className="absolute inset-0 bg-black/40 z-10" />
-                    <img
-                        src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=2000"
-                        alt="Luxury Diamond Ring"
-                        className="w-full h-full object-cover"
-                    />
                 </div>
 
                 <div className="relative z-20 text-center px-4 mt-20 max-w-4xl mx-auto">
@@ -181,7 +213,7 @@ export default function Home() {
                             className="relative"
                         >
                             <img
-                                src="https://images.unsplash.com/photo-1596940562635-423521250325?auto=format&fit=crop&q=80&w=1000"
+                                src="/images/rings/Trillion/Pave_ring_.WEBP"
                                 alt="Jewellery Craftsmanship"
                                 className="w-full h-auto rounded-sm shadow-2xl"
                             />
@@ -216,9 +248,9 @@ export default function Home() {
             {/* CTA Banner */}
             <section className="py-24 relative overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0 bg-secondary/80 mix-blend-multiply z-10" />
+                    <div className="absolute inset-0 bg-black/60 z-10" />
                     <img
-                        src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=2000"
+                        src="/images/rings/Trillion/Cathedral_Ring.WEBP"
                         alt="Jewellery Background"
                         className="w-full h-full object-cover grayscale"
                     />

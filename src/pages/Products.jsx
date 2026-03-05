@@ -24,7 +24,7 @@ export default function Products() {
 
             {/* Header */}
             <section className="bg-secondary text-white pt-40 pb-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596940562635-423521250325?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center opacity-10 mix-blend-overlay" />
+                <div className="absolute inset-0 bg-[url('/images/rings/Trillion/Vintage_ring_.JPG')] bg-cover bg-center opacity-50" />
                 <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
