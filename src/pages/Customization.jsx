@@ -60,7 +60,8 @@ export default function Customization() {
                             className="bg-accent p-10 md:p-14 rounded-sm border-t-4 border-primary"
                         >
                             <span className="text-primary font-bold tracking-widest text-sm uppercase mb-2 block">Step 1</span>
-                            <h3 className="text-3xl font-heading text-secondary mb-8">Choose Your Metal</h3>
+                            <h3 className="text-3xl font-heading text-secondary mb-4">Choose Your Metal</h3>
+                            <p className="text-gray-600 font-light mb-8">First, select your preferred metal. If you choose Gold, you will then select the desired purity. Every choice is fully transparent.</p>
 
                             <div className="space-y-8">
                                 <div>
@@ -143,7 +144,8 @@ export default function Customization() {
                             viewport={{ once: true }}
                         >
                             <span className="text-primary font-bold tracking-widest text-sm uppercase mb-2 block">Step 3</span>
-                            <h3 className="text-3xl md:text-4xl font-heading text-white mb-8">Select Diamond Quality (4Cs)</h3>
+                            <h3 className="text-3xl md:text-4xl font-heading text-white mb-4">Select Diamond Quality</h3>
+                            <p className="text-gray-300 font-light mb-8">Just like the metals, the diamond price changes based on your selected variations. You have full control.</p>
 
                             <div className="space-y-4 mb-10">
                                 <div className="border border-white/20 p-4 bg-white/5 flex gap-4 items-center">
@@ -165,10 +167,9 @@ export default function Customization() {
                             </div>
 
                             <div className="bg-primary/10 p-6 border-l-4 border-primary">
-                                <h5 className="font-heading text-xl mb-2 text-primary">Budget Factors</h5>
+                                <h5 className="font-heading text-xl mb-2 text-primary">100% Pricing Transparency</h5>
                                 <p className="font-light text-gray-300 text-sm leading-relaxed">
-                                    Price changes based on: Diamond type (Natural / Lab-grown), Color, Clarity, Carat weight, and Metal purity. <br className="my-2" />
-                                    <strong className="text-white font-medium">We customise according to your budget.</strong>
+                                    Every price change based on your variations is clearly communicated. You will see exactly what you are paying for—<strong className="text-white font-medium">gold price, making charges, and diamond costs</strong> are all individually itemised.
                                 </p>
                             </div>
                         </motion.div>
@@ -196,8 +197,8 @@ export default function Customization() {
                                 </div>
                                 <div className="relative">
                                     <div className="absolute -left-[41px] top-1 w-5 h-5 border-2 border-primary bg-secondary rounded-full"></div>
-                                    <h4 className="text-xl font-heading text-white mb-2">Price Estimation</h4>
-                                    <p className="text-gray-400 font-light text-sm">We provide an exact price estimation based on approved elements.</p>
+                                    <h4 className="text-xl font-heading text-white mb-2">Price Estimation & Transparency</h4>
+                                    <p className="text-gray-400 font-light text-sm">We provide an exact price estimation with a clear breakdown of metal costs, diamond price, and making charges before production begins.</p>
                                 </div>
                                 <div className="relative">
                                     <div className="absolute -left-[41px] top-1 w-5 h-5 border-2 border-primary bg-secondary rounded-full"></div>

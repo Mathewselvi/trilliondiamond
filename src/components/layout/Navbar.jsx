@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Diamond } from 'lucide-react';
+import { Menu, X, Gem } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
@@ -38,7 +38,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-2 group">
-                        <Diamond className={`w-8 h-8 ${scrolled ? 'text-primary' : 'text-primary md:text-white'} transition-colors duration-300 group-hover:scale-110`} />
+                        <Gem strokeWidth={1} className={`w-8 h-8 ${scrolled ? 'text-primary' : 'text-primary md:text-white'} transition-colors duration-300 group-hover:scale-110`} />
                         <span className={`font-heading text-2xl font-bold tracking-wider ${scrolled ? 'text-secondary' : 'text-secondary md:text-white'} uppercase`}>
                             Trillion<span className="text-primary">Diamond</span>
                         </span>

@@ -4,11 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-white text-secondary font-body;
+    @apply bg-white text-secondary font-body antialiased selection:bg-primary selection:text-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading tracking-wide;
+    @apply font-heading tracking-wide antialiased;
   }
 }
 

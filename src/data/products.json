@@ -4,88 +4,113 @@
         "name": "Solitaire Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. A single center diamond. Timeless and elegant.",
-        "image": "/images/rings/Trillion/Solitaire_ring_.WEBP"
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Single diamond representing one true love.",
+        "image": "/images/rings/Trillion/Solitaire_ring_.WEBP",
+        "meaning": "One true love",
+        "main_feature": "Single diamond"
     },
     {
         "id": 2,
         "name": "Halo Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. Center stone surrounded by smaller diamonds for extra sparkle.",
-        "image": "/images/rings/Trillion/Halo_ring_.WEBP"
-    },
-    {
-        "id": 3,
-        "name": "Hidden Halo Ring",
-        "category": "Wedding Rings",
-        "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. A secret halo beneath the main stone adding discreet brilliance.",
-        "image": "/images/rings/Trillion/Hidden_halo_.PNG"
-    },
-    {
-        "id": 4,
-        "name": "Three-Stone Ring",
-        "category": "Wedding Rings",
-        "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. Symbolizes past, present & future.",
-        "image": "/images/rings/Trillion/Three_stone_ring.WEBP"
-    },
-    {
-        "id": 5,
-        "name": "Vintage Ring",
-        "category": "Wedding Rings",
-        "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. Detailed craftsmanship inspired by old-era designs.",
-        "image": "/images/rings/Trillion/Vintage_ring_.JPG"
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Center diamond with small diamond circle representing eternal love.",
+        "image": "/images/rings/Trillion/Halo_ring_.WEBP",
+        "meaning": "Eternal love",
+        "main_feature": "Center diamond with small diamond circle"
     },
     {
         "id": 6,
         "name": "Pave Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. Band covered with small diamonds for continuous shine.",
-        "image": "/images/rings/Trillion/Pave_ring_.WEBP"
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Tiny diamonds on band representing sparkling path of love.",
+        "image": "/images/rings/Trillion/Pave_ring_.WEBP",
+        "meaning": "Sparkling path of love",
+        "main_feature": "Tiny diamonds on band"
     },
     {
-        "id": 7,
-        "name": "Channel Set Ring",
+        "id": 4,
+        "name": "Three-Stone Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. Diamonds set securely inside a channel in the band.",
-        "image": "/images/rings/Trillion/Channel_ring_.WEBP"
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Three diamonds representing past, present, future.",
+        "image": "/images/rings/Trillion/Three_stone_ring.WEBP",
+        "meaning": "Past, present, future",
+        "main_feature": "Three diamonds"
+    },
+    {
+        "id": 5,
+        "name": "Vintage Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Antique design representing timeless romance.",
+        "image": "/images/rings/Trillion/Vintage_ring_.JPG",
+        "meaning": "Timeless romance",
+        "main_feature": "Antique design"
     },
     {
         "id": 8,
         "name": "Bezel Set Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. Metal surrounds the diamond completely for maximum security.",
-        "image": "/images/rings/Trillion/Infinity_ring.png"
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Stone surrounded by metal representing protection and strength.",
+        "image": "/images/rings/Trillion/Infinity_ring.png",
+        "meaning": "Protection and strength",
+        "main_feature": "Stone surrounded by metal"
     },
     {
         "id": 9,
         "name": "Tension Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. Diamond appears suspended entirely between metal ends.",
-        "image": "/images/rings/Trillion/Tension_ring_.JPG"
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Floating diamond representing modern elegance.",
+        "image": "/images/rings/Trillion/Tension_ring_.JPG",
+        "meaning": "Modern elegance",
+        "main_feature": "Floating diamond"
+    },
+    {
+        "id": 13,
+        "name": "Eternity Band",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Diamonds around band representing endless love.",
+        "image": "/images/rings/Trillion/Eternity_ring_.WEBP",
+        "meaning": "Endless love",
+        "main_feature": "Diamonds around band"
+    },
+    {
+        "id": 3,
+        "name": "Hidden Halo Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. A secret halo beneath the main stone adding discreet brilliance.",
+        "image": "/images/rings/Trillion/Hidden_halo_.PNG"
+    },
+    {
+        "id": 7,
+        "name": "Channel Set Ring",
+        "category": "Wedding Rings",
+        "price": "Custom Pricing",
+        "material": "Gold | Platinum | Silver",
+        "description": "1 Lakh+ models available. Diamonds set securely inside a channel in the band.",
+        "image": "/images/rings/Trillion/Channel_ring_.WEBP"
     },
     {
         "id": 10,
         "name": "Cathedral Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. Arched setting lifting the diamond high for a majestic look.",
         "image": "/images/rings/Trillion/Cathedral_Ring.WEBP"
     },
@@ -94,7 +119,7 @@
         "name": "Split Shank Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. Band splits dynamically as it approaches the center stone.",
         "image": "/images/rings/Trillion/Split_Shank_Ring.JPG"
     },
@@ -103,25 +128,16 @@
         "name": "Twisted Band Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. Romantic intertwined band design signifying intertwined lives.",
         "image": "/images/rings/Trillion/Twisted_Band_Ring.PNG"
-    },
-    {
-        "id": 13,
-        "name": "Eternity Band",
-        "category": "Wedding Rings",
-        "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
-        "description": "1 Lakh+ models available. Diamonds cascading all around the band \u2014 the symbol of forever.",
-        "image": "/images/rings/Trillion/Eternity_ring_.WEBP"
     },
     {
         "id": 14,
         "name": "Half Eternity Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. Brilliant diamonds delicately set on the top half of the band.",
         "image": "/images/rings/Trillion/Half_eternity_ring.WEBP"
     },
@@ -130,7 +146,7 @@
         "name": "Minimalist Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. Clean, simple, and beautifully modern style.",
         "image": "/images/rings/Trillion/Minimalist_Ring.PNG"
     },
@@ -139,7 +155,7 @@
         "name": "Custom Designer Ring",
         "category": "Wedding Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. Fully personalised and crafted based exclusively on your imagination.",
         "image": "/images/rings/Trillion/Floral_ring.PNG"
     },
@@ -148,7 +164,7 @@
         "name": "Round Solitaire Split-Shank Pav\u00e9",
         "category": "Other Rings",
         "price": "Custom Pricing",
-        "material": "18K Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. The perfect ring to start your forever journey with stunning details.",
         "image": "/images/rings/Trillion/Round_Solitaire_Split-Shank_Pav\u00e9_.WEBP"
     },
@@ -157,7 +173,7 @@
         "name": "Casual & Stackable Rings",
         "category": "Other Rings",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. Everyday elegance, perfect for stacking and casual wear.",
         "image": "/images/rings/Trillion/Casual_Stackable_Rings.PNG"
     },
@@ -166,7 +182,7 @@
         "name": "Cocktail Ring",
         "category": "Other Rings",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "1 Lakh+ models available. Bold, statement rings designed to turn heads.",
         "image": "/images/rings/Trillion/Cocktail_Ring.JPG"
     },
@@ -175,7 +191,7 @@
         "name": "Wedding Necklace",
         "category": "Neck Jewellery",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Elaborate, breathtaking neck pieces for your special day.",
         "image": "/images/rings/Trillion/Wedding_necklace_.png"
     },
@@ -184,7 +200,7 @@
         "name": "Mangalsutra & Pendants",
         "category": "Neck Jewellery",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Traditional symbols of love, modernized with brilliant diamonds.",
         "image": "/images/rings/Trillion/Magalsuthra_.PNG"
     },
@@ -193,7 +209,7 @@
         "name": "Single Pendant Necklace",
         "category": "Neck Jewellery",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Elegant and minimalist single pendant design.",
         "image": "/images/rings/Trillion/Single_pendant_necklace.JPG"
     },
@@ -202,7 +218,7 @@
         "name": "Tennis Bracelet",
         "category": "Bracelets & Hand Jewellery",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "A continuous line of perfectly cut diamonds wrapping the wrist.",
         "image": "/images/rings/Trillion/Tennis_Bracelet.PNG"
     },
@@ -211,7 +227,7 @@
         "name": "Bangles & Kadas",
         "category": "Bracelets & Hand Jewellery",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Traditional and contemporary rigid luxury jewelry for the wrist.",
         "image": "/images/rings/Trillion/Bangles_Kadas.PNG"
     },
@@ -220,7 +236,7 @@
         "name": "Bracelet",
         "category": "Bracelets & Hand Jewellery",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Expressive styling, lightweight and highly customizable.",
         "image": "/images/rings/Trillion/Bracelet_.png"
     },
@@ -229,7 +245,7 @@
         "name": "Foot Jewellery",
         "category": "Foot Jewellery",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Intricate craftsmanship gracing your every step.",
         "image": "/images/rings/Trillion/Foot_jewellery_.png"
     },
@@ -238,7 +254,7 @@
         "name": "Drop & Jhumka Earrings",
         "category": "Earrings",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Elegantly suspended, blending modern diamonds with classic styles.",
         "image": "/images/rings/Trillion/Earrings_Drop_Jhumka_Earrings_.PNG"
     },
@@ -247,7 +263,7 @@
         "name": "Studs",
         "category": "Earrings",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Versatile and brilliant daily wear masterpieces.",
         "image": "/images/rings/Trillion/Studs.PNG"
     },
@@ -256,7 +272,7 @@
         "name": "Hoops",
         "category": "Earrings",
         "price": "Custom Pricing",
-        "material": "Gold / Platinum",
+        "material": "Gold | Platinum | Silver",
         "description": "Classic gold hoops for an elegant and timeless look.",
         "image": "/images/rings/Trillion/Hoops.PNG"
     }

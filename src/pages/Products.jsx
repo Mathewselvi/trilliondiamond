@@ -122,10 +122,10 @@ export default function Products() {
                         >
                             <button
                                 onClick={() => setSelectedProduct(null)}
-                                className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/50 backdrop-blur rounded-full flex items-center justify-center hover:bg-white text-secondary transition-colors"
+                                className="absolute top-6 right-6 z-10 text-secondary/60 hover:text-black hover:rotate-90 transition-all duration-500"
                                 aria-label="Close"
                             >
-                                <X className="w-5 h-5" />
+                                <X className="w-6 h-6" strokeWidth={1.5} />
                             </button>
 
                             {/* Modal Image */}
@@ -151,9 +151,22 @@ export default function Products() {
 
                                 <div className="w-12 h-px bg-primary mb-6" />
 
-                                <p className="text-gray-600 font-light mb-8 leading-relaxed">
+                                <p className="text-gray-600 font-light mb-4 leading-relaxed">
                                     {selectedProduct.description}
                                 </p>
+
+                                {selectedProduct.meaning && (
+                                    <div className="mb-8 pt-6 border-t border-primary/20 space-y-4">
+                                        <div className="flex flex-col">
+                                            <span className="text-secondary/50 text-xs tracking-[0.2em] uppercase font-semibold mb-1">Signature</span>
+                                            <span className="text-secondary font-light text-lg">{selectedProduct.main_feature}</span>
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <span className="text-primary/70 text-xs tracking-[0.2em] uppercase font-semibold mb-1">Meaning</span>
+                                            <span className="text-secondary font-heading italic text-xl">"{selectedProduct.meaning}"</span>
+                                        </div>
+                                    </div>
+                                )}
 
                                 <div className="mt-auto space-y-4">
                                     <p className="text-sm text-gray-500">
@@ -163,9 +176,9 @@ export default function Products() {
                                         href={`https://wa.me/918848201874?text=Hello Trillion Diamond! I am very interested in learning more about the ${selectedProduct.name} (${selectedProduct.material}) from your website. Could you please provide more details?`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex text-center items-center justify-center gap-2 w-full py-4 bg-[#25D366] text-white tracking-widest uppercase text-sm font-medium hover:bg-[#1ebd5c] transition-colors"
+                                        className="flex items-center justify-center gap-3 w-full py-4 border border-[#25D366]/40 text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300 tracking-widest uppercase text-xs font-semibold"
                                     >
-                                        <MessageCircle className="w-5 h-5" /> Inquire on WhatsApp
+                                        <MessageCircle className="w-4 h-4" /> Inquire on WhatsApp
                                     </a>
                                 </div>
                             </div>

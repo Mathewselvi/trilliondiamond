@@ -14,9 +14,35 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Show the loader for 2.5 seconds initially
-    const timer = setTimeout(() => setIsLoading(false), 2500);
+    // Show the loader for 2.8 seconds initially for the extended elegant reveal
+    const timer = setTimeout(() => setIsLoading(false), 2800);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    // Initialize Lenis for luxurious buttery smooth scrolling
+    import('lenis').then(({ default: Lenis }) => {
+      const lenis = new Lenis({
+        duration: 1.5,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      return () => {
+        lenis.destroy();
+      };
+    });
   }, []);
 
   return (
