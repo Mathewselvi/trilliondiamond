@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, MessageCircle } from 'lucide-react';
@@ -8,8 +9,19 @@ import productsData from '../data/products.json';
 const categories = ['All', 'Wedding Rings', 'Other Rings', 'Neck Jewellery', 'Bracelets & Hand Jewellery', 'Foot Jewellery', 'Earrings'];
 
 export default function Products() {
+    const location = useLocation();
     const [activeCategory, setActiveCategory] = useState('All');
     const [selectedProduct, setSelectedProduct] = useState(null);
+
+    useEffect(() => {
+        if (location.state && location.state.openProductId) {
+            const product = productsData.find(p => p.id === location.state.openProductId);
+            if (product) {
+                setSelectedProduct(product);
+                setActiveCategory(product.category);
+            }
+        }
+    }, [location.state]);
 
     const filteredProducts = activeCategory === 'All'
         ? productsData

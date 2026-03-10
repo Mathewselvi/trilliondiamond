@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Star, ShieldCheck, Diamond, Gem } from 'lucide-react';
@@ -10,18 +10,21 @@ const heroImages = products.map(p => p.image).filter(Boolean);
 const featuredProducts = [
     {
         id: 1,
+        productId: 1,
         name: "Solitaire Collection",
         category: "Wedding Rings",
         image: "/images/rings/Trillion/Solitaire_ring_.WEBP",
     },
     {
         id: 2,
+        productId: 5,
         name: "Vintage Craftsmanship",
         category: "Wedding Rings",
         image: "/images/rings/Trillion/Vintage_ring_.JPG",
     },
     {
         id: 3,
+        productId: 13,
         name: "Eternity Bands",
         category: "Wedding Rings",
         image: "/images/rings/Trillion/Eternity_ring_.WEBP",
@@ -30,6 +33,7 @@ const featuredProducts = [
 
 export default function Home() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -131,6 +135,7 @@ export default function Home() {
                         {featuredProducts.map((product, idx) => (
                             <motion.div
                                 key={product.id}
+                                onClick={() => navigate('/products', { state: { openProductId: product.productId } })}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
