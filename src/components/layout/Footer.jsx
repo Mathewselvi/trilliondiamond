@@ -84,7 +84,7 @@ export default function Footer() {
                     <p>&copy; {new Date().getFullYear()} Trillion Diamond. All rights reserved.</p>
                     <div className="flex gap-4">
                         <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-                        <Link to="#" className="hover:text-white transition-colors">Terms of Service</Link>
+                        <Link to="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
                     </div>
                 </div>
             </div>

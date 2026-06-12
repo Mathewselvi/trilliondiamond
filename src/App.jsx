@@ -9,6 +9,7 @@ import Customization from './pages/Customization';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ui/ScrollToTop';
 import Loader from './components/ui/Loader';
+import Terms from './pages/Terms';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -60,6 +61,7 @@ function App() {
               <Route path="products" element={<Products />} />
               <Route path="customization" element={<Customization />} />
               <Route path="contact" element={<Contact />} />
+              <Route path="terms" element={<Terms />} />
             </Route>
           </Routes>
         </Router>
