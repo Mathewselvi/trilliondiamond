@@ -20,11 +20,11 @@ export default function Contact() {
         const text = `Hello Trillion Diamond!\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Subject:* ${formData.subject}\n*Message:* ${formData.message}`;
         
         // Open email client
-        window.location.href = `mailto:trilliondiamondtrilliondiamond@gmail.com?subject=Enquiry: ${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(text)}`;
+        window.location.href = `mailto:mathewselvi29@gmail.com?subject=Enquiry: ${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(text)}`;
         
         // Open WhatsApp in new tab after a short delay so the email client has time to open
         setTimeout(() => {
-            window.open(`https://wa.me/918848201874?text=${encodeURIComponent(text)}`, '_blank');
+            window.open(`https://wa.me/918848646502?text=${encodeURIComponent(text)}`, '_blank');
         }, 500);
     };
 
@@ -102,8 +102,8 @@ export default function Contact() {
                                         <div>
                                             <h4 className="text-lg font-heading text-secondary mb-1">Call Us</h4>
                                             <div className="flex flex-col">
-                                                <a href="tel:+918848201874" className="text-gray-500 font-light hover:text-primary transition-colors">
-                                                    +91 8848201874
+                                                <a href="tel:+918848646502" className="text-gray-500 font-light hover:text-primary transition-colors">
+                                                    +91 8848646502
                                                 </a>
                                                 <a href="tel:+918921643216" className="text-gray-500 font-light hover:text-primary transition-colors">
                                                     +91 8921643216
@@ -118,8 +118,8 @@ export default function Contact() {
                                         </div>
                                         <div>
                                             <h4 className="text-lg font-heading text-secondary mb-1">Email Us</h4>
-                                            <a href="mailto:trilliondiamondtrilliondiamond@gmail.com" className="text-gray-500 font-light hover:text-primary transition-colors break-all">
-                                                trilliondiamondtrilliondiamond@gmail.com
+                                            <a href="mailto:mathewselvi29@gmail.com" className="text-gray-500 font-light hover:text-primary transition-colors break-all">
+                                                mathewselvi29@gmail.com
                                             </a>
                                         </div>
                                     </div>
@@ -142,7 +142,7 @@ export default function Contact() {
                             {/* Map Embed */}
                             <div className="w-full h-64 bg-gray-100 mt-10">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15714.733519803153!2d76.26252996977539!3d10.043003200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c5e7514af7b%3A0xc665b16955d8f28c!2sVaduthala%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1709440623696!5m2!1sen!2sin"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4870.292393498274!2d76.27241307590165!3d10.018890490087536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d00131a346b%3A0xc6773201a553657f!2sTRILLION%20DIAMOND!5e1!3m2!1sen!2sin!4v1781333890697!5m2!1sen!2sin"
                                     width="100%"
                                     height="100%"
                                     style={{ border: 0 }}

@@ -220,13 +220,13 @@ export default function Customization() {
                         Book a consultation today and start creating something timeless.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="https://wa.me/918848201874?text=Hello Trillion Diamond! I would like to start customizing my own unique jewellery piece. How do we begin?" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-primary text-white text-sm tracking-widest uppercase hover:bg-secondary transition-colors duration-300">
+                        <a href="https://wa.me/918848646502?text=Hello Trillion Diamond! I would like to start customizing my own unique jewellery piece. How do we begin?" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-primary text-white text-sm tracking-widest uppercase hover:bg-secondary transition-colors duration-300">
                             Start Customisation
                         </a>
-                        <a href="https://wa.me/918848201874?text=Hello Trillion Diamond! I would like to book an appointment to visit your studio and discuss some designs." target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-secondary text-secondary text-sm tracking-widest uppercase hover:bg-secondary hover:text-white transition-colors duration-300">
+                        <a href="https://wa.me/918848646502?text=Hello Trillion Diamond! I would like to book an appointment to visit your studio and discuss some designs." target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-secondary text-secondary text-sm tracking-widest uppercase hover:bg-secondary hover:text-white transition-colors duration-300">
                             Book Appointment
                         </a>
-                        <a href="https://wa.me/918848201874?text=Hello Trillion Diamond! I have a few questions about your custom jewellery services." target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-secondary text-secondary text-sm tracking-widest uppercase hover:bg-secondary hover:text-white transition-colors duration-300 flex items-center justify-center gap-2">
+                        <a href="https://wa.me/918848646502?text=Hello Trillion Diamond! I have a few questions about your custom jewellery services." target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-secondary text-secondary text-sm tracking-widest uppercase hover:bg-secondary hover:text-white transition-colors duration-300 flex items-center justify-center gap-2">
                             WhatsApp Us
                         </a>
                     </div>
