@@ -10,22 +10,47 @@ export default function Contact() {
         subject: '',
         message: ''
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const text = `Hello Trillion Diamond!\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Subject:* ${formData.subject}\n*Message:* ${formData.message}`;
+        setIsSubmitting(true);
         
-        // Open email client
-        window.location.href = `mailto:mathewselvi29@gmail.com?subject=Enquiry: ${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(text)}`;
-        
-        // Open WhatsApp in new tab after a short delay so the email client has time to open
-        setTimeout(() => {
+        try {
+            // Send email directly in the background
+            await fetch("https://formsubmit.co/ajax/mathewselvi29@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message,
+                    _captcha: false
+                })
+            });
+
+            // Format WhatsApp text
+            const text = `Hello Trillion Diamond!\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Subject:* ${formData.subject}\n*Message:* ${formData.message}`;
+            
+            // Open WhatsApp in new tab
             window.open(`https://wa.me/918848646502?text=${encodeURIComponent(text)}`, '_blank');
-        }, 500);
+            
+            // Clear the form
+            setFormData({ name: '', email: '', subject: '', message: '' });
+        } catch (error) {
+            console.error("Error sending message:", error);
+            alert("There was an error sending your message. Please try again or contact us directly via WhatsApp.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -223,9 +248,10 @@ export default function Contact() {
 
                                 <button
                                     type="submit"
-                                    className="w-full flex justify-center items-center gap-2 bg-primary text-white py-4 text-sm tracking-widest uppercase hover:bg-secondary transition-colors duration-300"
+                                    disabled={isSubmitting}
+                                    className={`w-full flex justify-center items-center gap-2 bg-primary text-white py-4 text-sm tracking-widest uppercase transition-colors duration-300 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-secondary'}`}
                                 >
-                                    <MessageSquare className="w-5 h-5" /> Send Message
+                                    <MessageSquare className="w-5 h-5" /> {isSubmitting ? 'Sending...' : 'Send Message'}
                                 </button>
                             </form>
                         </motion.div>
