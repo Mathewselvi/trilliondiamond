@@ -17,8 +17,15 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const text = `Hello Trillion Diamond!%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Subject:* ${formData.subject}%0A*Message:* ${formData.message}`;
-        window.open(`https://wa.me/918848201874?text=${text}`, '_blank');
+        const text = `Hello Trillion Diamond!\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Subject:* ${formData.subject}\n*Message:* ${formData.message}`;
+        
+        // Open email client
+        window.location.href = `mailto:trilliondiamondtrilliondiamond@gmail.com?subject=Enquiry: ${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(text)}`;
+        
+        // Open WhatsApp in new tab after a short delay so the email client has time to open
+        setTimeout(() => {
+            window.open(`https://wa.me/918848201874?text=${encodeURIComponent(text)}`, '_blank');
+        }, 500);
     };
 
     return (
@@ -94,9 +101,14 @@ export default function Contact() {
                                         </div>
                                         <div>
                                             <h4 className="text-lg font-heading text-secondary mb-1">Call Us</h4>
-                                            <a href="tel:+918848201874" className="text-gray-500 font-light hover:text-primary transition-colors">
-                                                +91 8848201874
-                                            </a>
+                                            <div className="flex flex-col">
+                                                <a href="tel:+918848201874" className="text-gray-500 font-light hover:text-primary transition-colors">
+                                                    +91 8848201874
+                                                </a>
+                                                <a href="tel:+918921643216" className="text-gray-500 font-light hover:text-primary transition-colors">
+                                                    +91 8921643216
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -106,8 +118,8 @@ export default function Contact() {
                                         </div>
                                         <div>
                                             <h4 className="text-lg font-heading text-secondary mb-1">Email Us</h4>
-                                            <a href="mailto:mathewselvi29@gmail.com" className="text-gray-500 font-light hover:text-primary transition-colors">
-                                                mathewselvi29@gmail.com
+                                            <a href="mailto:trilliondiamondtrilliondiamond@gmail.com" className="text-gray-500 font-light hover:text-primary transition-colors break-all">
+                                                trilliondiamondtrilliondiamond@gmail.com
                                             </a>
                                         </div>
                                     </div>
@@ -213,7 +225,7 @@ export default function Contact() {
                                     type="submit"
                                     className="w-full flex justify-center items-center gap-2 bg-primary text-white py-4 text-sm tracking-widest uppercase hover:bg-secondary transition-colors duration-300"
                                 >
-                                    <MessageSquare className="w-5 h-5" /> Send via WhatsApp
+                                    <MessageSquare className="w-5 h-5" /> Send Message
                                 </button>
                             </form>
                         </motion.div>
