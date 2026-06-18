@@ -11,6 +11,7 @@ export default function Contact() {
         message: ''
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSuccess, setIsSuccess] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -40,14 +41,14 @@ export default function Contact() {
                 throw new Error("Failed to send email notification");
             }
 
-            // Format WhatsApp text
-            const text = `Hello Trillion Diamond!\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Subject:* ${formData.subject}\n*Message:* ${formData.message}`;
-            
-            // Open WhatsApp in new tab
-            window.open(`https://wa.me/918848201874?text=${encodeURIComponent(text)}`, '_blank');
-            
             // Clear the form
             setFormData({ name: '', email: '', subject: '', message: '' });
+            
+            // Show success message
+            setIsSuccess(true);
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => setIsSuccess(false), 5000);
         } catch (error) {
             console.error("Error sending message:", error);
             alert("There was an error sending your message. Please try again or contact us directly via WhatsApp.");
@@ -191,6 +192,17 @@ export default function Contact() {
                             className="bg-accent p-8 md:p-12 shadow-sm"
                         >
                             <h2 className="text-2xl font-heading text-secondary mb-8">Send an Inquiry</h2>
+
+                            {isSuccess && (
+                                <motion.div 
+                                    initial={{ opacity: 0, y: -10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    className="bg-green-50 text-green-800 p-4 mb-6 border border-green-200"
+                                >
+                                    <p className="font-medium">Thank you!</p>
+                                    <p className="text-sm mt-1">Your message has been successfully sent. We will get back to you shortly.</p>
+                                </motion.div>
+                            )}
 
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div>
