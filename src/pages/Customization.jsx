@@ -1,14 +1,15 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/ui/SEO';
 import { motion } from 'framer-motion';
 import { Sparkles, Diamond, Layers, CheckCircle, Gem, PenTool } from 'lucide-react';
 
 export default function Customization() {
     return (
         <>
-            <Helmet>
-                <title>How Our Customisation Works | Trillion Diamond</title>
-                <meta name="description" content="Design your dream jewelry. Choose between natural or lab-grown diamonds, combined with premium BIS hallmarked gold, platinum or silver." />
-            </Helmet>
+            <SEO 
+                title="How Our Customisation Works | Trillion Diamond"
+                description="Design your dream jewelry. Choose between natural or lab-grown diamonds, combined with premium BIS hallmarked gold, platinum or silver."
+                url="/customization"
+            />
 
             {/* Hero Header */}
             <section className="bg-secondary text-white pt-40 pb-20 relative overflow-hidden">

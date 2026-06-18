@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/ui/SEO';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Star, ShieldCheck, Diamond, Gem } from 'lucide-react';
 import products from '../data/products.json';
@@ -44,10 +44,11 @@ export default function Home() {
 
     return (
         <>
-            <Helmet>
-                <title>Trillion Diamond | Custom Luxury Jewellery in Ernakulam</title>
-                <meta name="description" content="Discover premium custom diamond jewellery and engagement rings at Trillion Diamond. BIS Gold & IGI Certified Natural and Lab-Grown diamonds." />
-            </Helmet>
+            <SEO 
+                title="Trillion Diamond | Custom Luxury Jewellery in Ernakulam"
+                description="Discover premium custom diamond jewellery and engagement rings at Trillion Diamond. BIS Gold & IGI Certified Natural and Lab-Grown diamonds."
+                url="/"
+            />
 
             {/* Hero Section */}
             <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
@@ -147,6 +148,7 @@ export default function Home() {
                                     <img
                                         src={product.image}
                                         alt={product.name}
+                                        loading="lazy"
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                     />
                                     <div className="absolute bottom-6 w-full text-center z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -220,6 +222,7 @@ export default function Home() {
                             <img
                                 src="/images/rings/Trillion/Pave_ring_.WEBP"
                                 alt="Jewellery Craftsmanship"
+                                loading="lazy"
                                 className="w-full h-auto rounded-sm shadow-2xl"
                             />
                             <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-white p-4 shadow-xl hidden md:block">
@@ -257,6 +260,7 @@ export default function Home() {
                     <img
                         src="/images/rings/Trillion/Cathedral_Ring.WEBP"
                         alt="Jewellery Background"
+                        loading="lazy"
                         className="w-full h-full object-cover grayscale"
                     />
                 </div>

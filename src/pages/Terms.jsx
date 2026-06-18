@@ -1,13 +1,14 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/ui/SEO';
 import { motion } from 'framer-motion';
 
 export default function Terms() {
     return (
         <>
-            <Helmet>
-                <title>Terms & Conditions | Trillion Diamond</title>
-                <meta name="description" content="Terms and conditions, buyback policy, and exchange policy for Trillion Diamond." />
-            </Helmet>
+            <SEO 
+                title="Terms & Conditions | Trillion Diamond"
+                description="Terms and conditions, buyback policy, and exchange policy for Trillion Diamond."
+                url="/terms"
+            />
 
             {/* Hero Header */}
             <section className="bg-secondary text-white pt-40 pb-20 relative overflow-hidden">

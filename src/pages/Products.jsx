@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/ui/SEO';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, MessageCircle } from 'lucide-react';
 import ProductCard from '../components/ui/ProductCard';
@@ -17,8 +17,10 @@ export default function Products() {
         if (location.state && location.state.openProductId) {
             const product = productsData.find(p => p.id === location.state.openProductId);
             if (product) {
-                setSelectedProduct(product);
-                setActiveCategory(product.category);
+                setTimeout(() => {
+                    setSelectedProduct(product);
+                    setActiveCategory(product.category);
+                }, 0);
             }
         }
     }, [location.state]);
@@ -29,10 +31,11 @@ export default function Products() {
 
     return (
         <>
-            <Helmet>
-                <title>Our Collections | Trillion Diamond</title>
-                <meta name="description" content="Explore our exquisite collection of engagement rings and custom diamond jewellery. Masterfully crafted in gold and platinum." />
-            </Helmet>
+            <SEO 
+                title="Our Collections | Trillion Diamond"
+                description="Explore our exquisite collection of engagement rings and custom diamond jewellery. Masterfully crafted in gold and platinum."
+                url="/products"
+            />
 
             {/* Header */}
             <section className="bg-secondary text-white pt-40 pb-20 relative overflow-hidden">
@@ -145,6 +148,7 @@ export default function Products() {
                                 <img
                                     src={selectedProduct.image}
                                     alt={selectedProduct.name}
+                                    loading="lazy"
                                     className="w-full h-full object-cover"
                                 />
                             </div>

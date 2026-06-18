@@ -19,10 +19,10 @@ export default function Footer() {
                             Crafting timeless diamond elegance with exceptional purity and masterful artistry. Find your perfect sparkle.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300">
+                            <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300">
                                 <Instagram className="w-4 h-4" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300">
+                            <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300">
                                 <Facebook className="w-4 h-4" />
                             </a>
                         </div>

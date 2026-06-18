@@ -26,7 +26,7 @@ export default function Navbar() {
 
     // Close menu on route change
     useEffect(() => {
-        setIsOpen(false);
+        setTimeout(() => setIsOpen(false), 0);
     }, [location.pathname]);
 
     return (
@@ -73,6 +73,7 @@ export default function Navbar() {
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className={`${scrolled ? 'text-secondary' : 'text-primary'} hover:text-primary transition-colors`}
+                            aria-label="Toggle mobile menu"
                         >
                             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                         </button>

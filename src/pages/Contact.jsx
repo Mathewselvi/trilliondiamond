@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/ui/SEO';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, MessageSquare } from 'lucide-react';
 
@@ -21,8 +21,8 @@ export default function Contact() {
         setIsSubmitting(true);
         
         try {
-            // Send email directly in the background
-            await fetch("https://formsubmit.co/ajax/trilliondiamondkochi@gmail.com", {
+            // Send email via Vercel serverless function
+            const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
@@ -32,10 +32,13 @@ export default function Contact() {
                     name: formData.name,
                     email: formData.email,
                     subject: formData.subject,
-                    message: formData.message,
-                    _captcha: false
+                    message: formData.message
                 })
             });
+
+            if (!response.ok) {
+                throw new Error("Failed to send email notification");
+            }
 
             // Format WhatsApp text
             const text = `Hello Trillion Diamond!\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Subject:* ${formData.subject}\n*Message:* ${formData.message}`;
@@ -55,10 +58,11 @@ export default function Contact() {
 
     return (
         <>
-            <Helmet>
-                <title>Contact Us | Trillion Diamond</title>
-                <meta name="description" content="Get in touch with Trillion Diamond for custom bespoke jewelry inquiries, appointments, and showroom visits in Vaduthala, Ernakulam." />
-            </Helmet>
+            <SEO 
+                title="Contact Us | Trillion Diamond"
+                description="Get in touch with Trillion Diamond for custom bespoke jewelry inquiries, appointments, and showroom visits in Vaduthala, Ernakulam."
+                url="/contact"
+            />
 
             {/* Header */}
             <section className="bg-secondary text-white pt-40 pb-20 relative overflow-hidden">

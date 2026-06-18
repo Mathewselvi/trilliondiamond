@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/ui/SEO';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom';
 export default function About() {
     return (
         <>
-            <Helmet>
-                <title>About Our Studio | Trillion Diamond</title>
-                <meta name="description" content="Welcome to your personal ring studio. We are a custom wedding & engagement ring studio in Ernakulam." />
-            </Helmet>
+            <SEO 
+                title="About Our Studio | Trillion Diamond"
+                description="Welcome to your personal ring studio. We are a custom wedding & engagement ring studio in Ernakulam."
+                url="/about"
+            />
 
             {/* Hero Header */}
             <section className="bg-secondary text-white pt-40 pb-20 relative overflow-hidden">
@@ -53,6 +54,7 @@ export default function About() {
                             <img
                                 src="/images/rings/Trillion/Solitaire_ring_.WEBP"
                                 alt="Custom Wedding Ring Studio"
+                                loading="lazy"
                                 className="w-full h-full object-cover rounded-sm shadow-xl"
                             />
                             <div className="absolute top-10 -right-10 w-2/3 h-2/3 border border-primary/30 -z-10 hidden lg:block" />
