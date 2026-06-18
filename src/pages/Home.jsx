@@ -116,7 +116,7 @@ export default function Home() {
                         <Link to="/products" className="px-8 py-3 border border-white bg-black/20 text-white text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-colors duration-300">
                             Explore Wedding Rings
                         </Link>
-                        <a href="https://wa.me/918848646502?text=Hello Trillion Diamond! I would like to book a consultation to discuss a custom jewellery design." target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-white text-white text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-colors duration-300">
+                        <a href="https://wa.me/918848201874?text=Hello Trillion Diamond! I would like to book a consultation to discuss a custom jewellery design." target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-white text-white text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-colors duration-300">
                             Book Consultation
                         </a>
                     </motion.div>
@@ -244,7 +244,7 @@ export default function Home() {
                     <p className="text-gray-600 font-light text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
                         If you have a design in mind or a reference picture from anywhere, just show it to us. We will craft the <strong className="text-secondary font-medium">exact same piece</strong> exclusively for you.
                     </p>
-                    <a href="https://wa.me/918848646502?text=Hello Trillion Diamond! I have a reference picture of a jewellery design that I would love to recreate. Can we discuss the possibilities?" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 border border-secondary text-secondary text-sm tracking-widest uppercase hover:bg-secondary hover:text-white transition-colors duration-300">
+                    <a href="https://wa.me/918848201874?text=Hello Trillion Diamond! I have a reference picture of a jewellery design that I would love to recreate. Can we discuss the possibilities?" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-4 border border-secondary text-secondary text-sm tracking-widest uppercase hover:bg-secondary hover:text-white transition-colors duration-300">
                         Share Reference Picture
                     </a>
                 </div>

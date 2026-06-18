@@ -63,7 +63,7 @@ export default function Products() {
                     <p className="text-gray-600 font-light mb-6">
                         If you have a reference picture or design from anywhere in the world, just show it to us. Our artisans will craft the <strong className="text-secondary font-medium">exact same piece</strong> exclusively for you.
                     </p>
-                    <a href="https://wa.me/918848646502?text=Hello Trillion Diamond! I have a reference picture of a jewellery design that I would love to custom make. Can you help me with this?" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-primary text-white text-xs tracking-widest uppercase hover:bg-secondary transition-colors duration-300">
+                    <a href="https://wa.me/918848201874?text=Hello Trillion Diamond! I have a reference picture of a jewellery design that I would love to custom make. Can you help me with this?" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-primary text-white text-xs tracking-widest uppercase hover:bg-secondary transition-colors duration-300">
                         Share Reference Design
                     </a>
                 </div>
@@ -185,7 +185,7 @@ export default function Products() {
                                         Pricing varies based on diamond specifications.
                                     </p>
                                     <a
-                                        href={`https://wa.me/918848646502?text=Hello Trillion Diamond! I am very interested in learning more about the ${selectedProduct.name} (${selectedProduct.material}) from your website. Could you please provide more details?`}
+                                        href={`https://wa.me/918848201874?text=Hello Trillion Diamond! I am very interested in learning more about the ${selectedProduct.name} (${selectedProduct.material}) from your website. Could you please provide more details?`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="flex items-center justify-center gap-3 w-full py-4 border border-[#25D366]/40 text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300 tracking-widest uppercase text-xs font-semibold"

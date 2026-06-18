@@ -22,7 +22,7 @@ export default function Contact() {
         
         try {
             // Send email directly in the background
-            await fetch("https://formsubmit.co/ajax/mathewselvi29@gmail.com", {
+            await fetch("https://formsubmit.co/ajax/trilliondiamondkochi@gmail.com", {
                 method: "POST",
                 headers: { 
                     'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export default function Contact() {
             const text = `Hello Trillion Diamond!\n\n*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Subject:* ${formData.subject}\n*Message:* ${formData.message}`;
             
             // Open WhatsApp in new tab
-            window.open(`https://wa.me/918848646502?text=${encodeURIComponent(text)}`, '_blank');
+            window.open(`https://wa.me/918848201874?text=${encodeURIComponent(text)}`, '_blank');
             
             // Clear the form
             setFormData({ name: '', email: '', subject: '', message: '' });
@@ -127,8 +127,8 @@ export default function Contact() {
                                         <div>
                                             <h4 className="text-lg font-heading text-secondary mb-1">Call Us</h4>
                                             <div className="flex flex-col">
-                                                <a href="tel:+918848646502" className="text-gray-500 font-light hover:text-primary transition-colors">
-                                                    +91 8848646502
+                                                <a href="tel:+918848201874" className="text-gray-500 font-light hover:text-primary transition-colors">
+                                                    +91 8848201874
                                                 </a>
                                                 <a href="tel:+918921643216" className="text-gray-500 font-light hover:text-primary transition-colors">
                                                     +91 8921643216
@@ -143,8 +143,8 @@ export default function Contact() {
                                         </div>
                                         <div>
                                             <h4 className="text-lg font-heading text-secondary mb-1">Email Us</h4>
-                                            <a href="mailto:mathewselvi29@gmail.com" className="text-gray-500 font-light hover:text-primary transition-colors break-all">
-                                                mathewselvi29@gmail.com
+                                            <a href="mailto:trilliondiamondkochi@gmail.com" className="text-gray-500 font-light hover:text-primary transition-colors break-all">
+                                                trilliondiamondkochi@gmail.com
                                             </a>
                                         </div>
                                     </div>

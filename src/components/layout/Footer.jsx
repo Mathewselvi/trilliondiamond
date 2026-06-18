@@ -50,13 +50,13 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                                 <div className="flex flex-col gap-1">
-                                    <a href="tel:+918848646502" className="hover:text-primary transition-colors">+91 8848646502</a>
+                                    <a href="tel:+918848201874" className="hover:text-primary transition-colors">+91 8848201874</a>
                                     <a href="tel:+918921643216" className="hover:text-primary transition-colors">+91 8921643216</a>
                                 </div>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                                <a href="mailto:mathewselvi29@gmail.com" className="hover:text-primary transition-colors break-all text-sm">mathewselvi29@gmail.com</a>
+                                <a href="mailto:trilliondiamondkochi@gmail.com" className="hover:text-primary transition-colors break-all text-sm">trilliondiamondkochi@gmail.com</a>
                             </li>
                         </ul>
                     </div>

@@ -59,7 +59,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <a
-                            href="https://wa.me/918848646502?text=Hello Trillion Diamond! I would like to request an appointment."
+                            href="https://wa.me/918848201874?text=Hello Trillion Diamond! I would like to request an appointment."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-2 bg-primary text-white text-sm tracking-widest uppercase border border-primary hover:bg-transparent hover:text-primary transition-all duration-300"
@@ -102,7 +102,7 @@ export default function Navbar() {
                             ))}
                             <div className="pt-4 flex justify-center">
                                 <a
-                                    href="https://wa.me/918848646502?text=Hello Trillion Diamond! I would like to request an appointment."
+                                    href="https://wa.me/918848201874?text=Hello Trillion Diamond! I would like to request an appointment."
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="px-8 py-3 bg-primary text-white text-sm tracking-widest uppercase block text-center w-full max-w-xs"
