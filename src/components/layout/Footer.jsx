@@ -82,9 +82,20 @@ export default function Footer() {
 
                 </div>
 
-                {/* Copyright */}
+                {/* Copyright & Credit */}
                 <div className="text-center text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p>&copy; {new Date().getFullYear()} Trillion Diamond. All rights reserved.</p>
+                    <p className="text-xs text-gray-400/80 tracking-wider">
+                        Developed by{' '}
+                        <a
+                            href="https://mathewselvi.in/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-300 font-medium hover:text-primary transition-colors underline-offset-4 hover:underline"
+                        >
+                            Mathew Selvi
+                        </a>
+                    </p>
                     <div className="flex gap-4">
                         <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
                         <Link to="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
